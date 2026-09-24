@@ -1,6 +1,6 @@
 // In development always use Vite's /api proxy. This avoids CORS issues and keeps
 // the frontend working even when the local Express backend is not running.
-// In production Netlify uses VITE_API_URL to reach the deployed Render backend.
+// In production the hosting platform uses VITE_API_URL to reach the deployed Render backend.
 const API_URL = import.meta.env.DEV
   ? "/api"
   : import.meta.env.VITE_API_URL || "/api";
