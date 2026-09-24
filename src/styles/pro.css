@@ -315,9 +315,22 @@ body {
   background: var(--pro-border);
 }
 .trust-item { display: flex; gap: 13px; align-items: center; padding: 20px; background: #fff; }
-.trust-icon { width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 12px; background: #ecfdf3; color: var(--pro-brand); font-size: 18px; }
+.trust-item .trust-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  margin-top: 0;
+  border-radius: 12px;
+  background: #ecfdf3;
+  color: var(--pro-brand);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
 .trust-item strong { display: block; font-size: 13px; }
-.trust-item span { display: block; margin-top: 2px; color: #667085; font-size: 11px; }
+.trust-item > div > span { display: block; margin-top: 2px; color: #667085; font-size: 11px; }
 
 /* Product catalogue */
 .products-section { padding: 72px 0 90px; }
